@@ -1,0 +1,5 @@
+Hi :)
+I opened nano in gitbash and I am writing you from here.
+I was supposed to put a local .txt file from my computer into the repo but i didn't have any
+
+this should be fine tho
