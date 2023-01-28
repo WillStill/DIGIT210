@@ -1,0 +1,18 @@
+body {
+    display: block;
+    color: #1D1A11;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-decoration: none;
+    margin: 0 1rem 0 1rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.small {
+    font-size: .5rem;
+}
