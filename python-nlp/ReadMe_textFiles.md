@@ -1,0 +1,3 @@
+# TextFiles.com History Corpus
+
+These files were scraped from [textfiles.com/history](http://textfiles.com/history/). The larger site of [textfiles.com](http://textfiles.com) contains a lot of text files. Certain genres are formatted with ASCII tables, and others have vulgar language. I selected to scrape through files that talk about Bulletin Board Systems as formatting issues and strong language are less prevelent.

@@ -1,0 +1,43 @@
+Howard Moulton Jr. - March 6
+
+Hi,
+ My name is Howard and I came across your site while I was attempting
+to find the original CBBS CP/M software source. I actually marveled at
+discovering the noting that I was the original writer of RBBS. As far
+as I know, this was the only version of a BBS ever written in Basic.
+At the time, I did not know machine language and thought that my town
+should have a BBS too. It's name was derived from where I was living
+at the time - St. Johnsbury, VT. It was written on a TDL Xitan Z-80
+S-100 machine, in TDL Xitan basic that ran on Micropolis 5.25 100tpi
+drives using the Micropolis operating system. The modem was a Bell
+Systems Dataset 202A found at a hamfest. You had to manually dial the
+number on your phone and wait until you heard the tone before
+switching over to the Dataset, similar to acoustic of the time. It
+would automatically answer calls without intervention. I had worked on
+it for about a week, trying to get it to behave in the likeness of
+Wards' CBBS. It did the store-and-forward part of messaging similar to
+CBBS except that it was considerabley slower than its ML counterpart,
+mainly due to the fact that the Micropolis drives were EXTREMELY slow
+- nearly 200ms track-track seek times. TDL Xitan basic made up for
+some of the loss in speed because it was written in Z80, not in 8080
+like MBASIC (and I had beefed the TDL Z80 "ZPU" as they called it, to
+3.5 MHZ). I finally called into CBBS and asked Ward to call mine and
+tell me what he thought after. He did. While his version could run
+circles around mine ten fold, this basic version could be easily
+ported to any machine that could imtrepret basic. My good friend at
+the time in Johnson City, NY, Charles, received a copy and adapted it
+to his setup without much change. He in turn released a copy to Bruce
+with my blessing, and history tells the rest. When Randy and Ward
+finally made CBBS available to the public, I bought the 2 disk set,
+even though I did not have 8" drives at the time. I received them and
+just stored them for future use. I think I may still have them in the
+original mailer that Randy used. They have never been inserted in a
+drive so I'm not so sure they're readable now. If I locate them, I'll
+send along a snap of them.
+So thanks for your efforts to track down how BBS's really blew into a
+frenzy there for a short while and  actually paved the way to the
+internet.
+
+Good work on this site. I love it.
+
+73's de W1ARQ  Howard Moulton
