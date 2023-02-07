@@ -5,10 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80f0d1a9-73bb-40ae-9e8f-2b430cde3729" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/nlp1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/nlp2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatGPTtests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/avatarSpeeches.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disneySongLyrics.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grimm.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stiller-chatgpt2-1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stiller-chatgpt2-2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stiller-chatgpt2-3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stiller-chatgpt2-4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stiller-chatgpt2-5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stiller-chatgpt2-6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stiller-chatgpt2-7.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
