@@ -1,4 +1,4 @@
-
+﻿
 A Brief History & Guide to the UK Underground Scene
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -223,6 +223,6 @@ paris@soljo.org
 www.thegreatone.me.uk
 "Yes, but why has all the rum gone?"
 
-Copyright � |PaRiS| 2004
+Copyright © |PaRiS| 2004
 
 EOF

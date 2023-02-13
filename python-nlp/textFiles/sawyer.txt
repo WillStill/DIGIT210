@@ -1,4 +1,4 @@
-BBS Name:  USS Enterprise
+ï»¿BBS Name:  USS Enterprise
 BBS Number:  (810) 775-0018    (please note that 810 was split from 313
 - feel free to list as a 313 along with other "Detroit & Suburbs" BBSes)
 Sysop:  Fdisk (that's me)
@@ -46,7 +46,7 @@ the games BRE (Barren Realms Elite), SRE (Solar Realms Elite) and Drug
 Lord.
  
 It didn't take me long to realize that 2400 baud was dreadfully slow.
-It took over 1¼ hours to download a 1MB file!  (With today's cable
+It took over 1Äµ hours to download a 1MB file!  (With today's cable
 modems, I don't think twice about downloading a 134MB Windows service
 pack from Microsoft.)
  
@@ -120,9 +120,9 @@ lot of the students will be fresh out of high school and, sadly, many
 will have no idea what a BBS is, or was.  They deserve to know about
 them....they are a part of our history.
  
-Just like Dr. Václav Rajlich, one of my favorite professors at Wayne
+Just like Dr. VÃ¡clav Rajlich, one of my favorite professors at Wayne
 State, likes to refer to the days of punch cards as the "good old days"
-of computers...to me, BBSes and 5¼ floppy disks are the "good old days"
+of computers...to me, BBSes and 5Äµ floppy disks are the "good old days"
 of computers.  Heck, when I worked at Macomb Community College as a
 computer lab technician, I was exposed to 8" floppy disks, huge
 removable disk packs and 14" hard drives that hold less than 1% of
