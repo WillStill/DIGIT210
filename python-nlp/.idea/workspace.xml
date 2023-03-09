@@ -5,23 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80f0d1a9-73bb-40ae-9e8f-2b430cde3729" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/textFiles/dalive" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/textFiles/golnar.txt" beforeDir="false" afterPath="$PROJECT_DIR$/textFiles/golnar.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/textFiles/hackingcracking.txt" beforeDir="false" afterPath="$PROJECT_DIR$/textFiles/hackingcracking.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/textFiles/iremember" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/textFiles/jimhood.txt" beforeDir="false" afterPath="$PROJECT_DIR$/textFiles/jimhood.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/textFiles/kilroy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/textFiles/mindvox" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/textFiles/modemlife.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/textFiles/mog-history" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/textFiles/msorrow" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/textFiles/sawyer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/textFiles/sawyer.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/textFiles/ukunderg.txt" beforeDir="false" afterPath="$PROJECT_DIR$/textFiles/ukunderg.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/textFiles/whatbbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/textFiles/yuban.txt" beforeDir="false" afterPath="$PROJECT_DIR$/textFiles/yuban.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/topicModelling.py" beforeDir="false" afterPath="$PROJECT_DIR$/topicModelling.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,14 +30,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/still/Documents/GitHub/DIGIT210/python-nlp/textFiles/hackingcracking.txt&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/still/Documents/GitHub/StardewDIGIT210/python/SDtesting.py",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\still\Documents\GitHub\StardewDIGIT210\python" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="nlp1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-nlp" />

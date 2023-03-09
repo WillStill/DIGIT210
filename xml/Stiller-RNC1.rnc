@@ -1,0 +1,34 @@
+start = doc
+doc = element doc {intro?, mixed{(section | heading)+}}
+
+intro = element intro {mixed{title*, name*, publisher*, date*}}
+section = element section {type, mixed{date*, line*, lists*, instr*}}
+heading = element heading {text}
+
+type = attribute type {xsd:ID}
+
+title = element title {text}
+name = element name {abr, role?, text}
+publisher = element publisher {abr, text}
+date = element date {when, text}
+line = element line {n, mixed{(instr | name | ingr | impl | time | meas)*}}
+lists = element lists {li+}
+
+abr = attribute abr {text}
+role = attribute role {text}
+when = attribute when {xsd:date}
+n = attribute n {xsd:int}
+
+instr = element instr {mixed{(ingr | impl | time | impl | time | meas)*}}
+li = element li {n, mixed{(ingr | impl | time | impl | time | meas)*}}
+meas = element meas {numval?, unit?, quan?, text}
+time = element time {mixed{meas*}}
+impl = element impl {abr, subs?, text}
+ingr = element ingr {abr, subs*, produce*, mixed{meas*}}
+
+numval = attribute numval {xsd:decimal}
+unit = attribute unit {text}
+quan = attribute quan {xsd:int}
+subs = attribute subs {xsd:int}
+produce = attribute produce {text}
+

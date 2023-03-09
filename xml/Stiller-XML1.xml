@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Stiller-RNC1.rnc" type="application/relax-ng-compact-syntax"?>
+
+<doc>
+    <intro>
+        <title>Country Loaf (Pain de Campagne)</title>
+        
+        <name abr="DL" role="author">Deb Lindsey</name> for <publisher abr="WSHP">The Washington Post</publisher>
+    </intro>
+    
+    <section type="desc">
+        <date when="2014-09-10">SEP 10, 2014</date>
+        <line n="1">Washington author <name abr="SF" role="baker">Sam Fromartz</name> has been making sourdough variations of this yeast bread for years. Here, he adds <ingr abr="FrmCid" subs="1">fermented cider</ingr> for flavor. A <ingr abr="MldBeer" subs="1">mild beer</ingr> may be substituted; an IPA would be too bitter. The loaf is sized to last a few days.
+        </line>
+        
+        <line n="2">The optional <ingr abr="Wtr"><meas unit="tblspoon" numval="1">tablespoon of water</meas></ingr> is to compensate for the variable absorption of the <ingr abr="RyeFlwr">rye</ingr> and <ingr abr="WhlWhtFlwr">whole-wheat flours</ingr>.
+        </line>
+        
+        <line n="3">You'll need a <impl abr="Clndr">colander</impl>, a <impl abr="PstryClth" subs="2">pastry cloth</impl> or clean <impl abr="DTwl" subs="2">dish towel</impl> and a <impl abr="CCIron" subs="3">covered cast-iron</impl> or <impl abr="ECIron" subs="3">enameled cast-iron pot</impl>.
+        </line>
+        
+        <line n="4"><instr>Make Ahead: The <ingr abr="Dgh">dough</ingr> needs <time><meas numval="20" unit="min" quan="4">four 20-minute rests</meas></time>, plus an <time><meas numval="8" unit="hour">8</meas>-to-<meas numval="24" unit="hour">24-hour</meas> stay</time> in the refrigerator and a final <time><meas numval="1.5" unit="hour" quan="1">1 1/2-hour rise</meas></time>.</instr>
+        </line>
+        
+        <line n="5"><instr>Storage Notes: Store the cooled loaf in a <impl abr="PprB">paper bag</impl> <time><meas numval="24" unit="hour">for a day</meas></time>, and store in a <impl abr="PlcB">plastic bag</impl> <time><meas unit="day">for a few days</meas></time> after that. Do not refrigerate.</instr>
+        </line> 
+    </section>
+    
+    <heading>SERVINGS:</heading>
+    <section type="serv">
+        <line n="6">Tested size: <meas numval="10" unit="serving">10</meas>-<meas numval="12" unit="serving">12 servings</meas>; makes <meas numval="11" unit="ounce" quan="1">one 11-ounce loaf</meas> <meas numval="10" unit="slice">10</meas> to <meas numval="12" unit="slice">12 slices</meas></line>
+    </section>
+    
+    <heading>INGREDIENTS</heading>
+    <section type="ingred">
+        <lists>
+            <li n="1"><ingr abr="WhtBrdFlwr"><meas  numval="1.25" unit="cup">1 1/4 cups</meas> (<meas  numval="160" unit="gram">160 grams</meas>) white bread flour</ingr>, plus more for dusting</li>
+            
+            <li n="2"><ingr abr="WhtWhtFlwr"><meas  numval=".25" unit="cup">1/4 cup</meas> (<meas  numval="38" unit="gram">38 grams</meas>) stone-ground whole-wheat flour</ingr></li>
+            
+            <li n="3"><ingr abr="RyeFlwr"><meas numval=".25" unit="cup">1/4 cup</meas> (<meas numval="32" unit="gram">32 grams</meas>) stone-ground whole rye flour</ingr></li>
+            
+            <li n="4"><ingr abr="InstYst" subs="4"><meas numval=".5" unit="tspoon">1/2 teaspoon</meas> instant yeast</ingr> or <ingr abr="BrdMchYst" subs="4">bread machine yeast</ingr></li>
+            
+            <li n="5"><ingr abr="Salt"><meas numval="1" unit="tspoon">1 teaspoon</meas> table salt</ingr></li>
+            
+            <li n="6"><ingr abr="FrmCid" subs="1"><meas numval=".25" unit="cup">1/4 cup</meas> (<meas numval="55" unit="gram">55 grams</meas>) dry fermented cider</ingr> (may substitute <ingr abr="MldBeer" subs="1">Pilsener beer</ingr>; see headnote)</li>
+            
+            <li n="7"><ingr abr="Wtr"><meas numval=".5" unit="cup">1/2 cup</meas> (<meas numval="120" unit="gram">120 grams</meas>) lukewarm water (<meas numval="80" unit="degree">80 degrees</meas>)</ingr>, plus an optional <ingr abr="Wtr"><meas numval="1" unit="tblspoon">1 tablespoon</meas></ingr></li>
+            
+        </lists>
+    </section>
+    
+    <heading>DIRECTIONS</heading>
+    <section type="direc">
+        <line n="7"><instr>Whisk together the <ingr abr="WhtBrdFlwr WhtWhtFlwr RyeFlwr InstYst BrdMchYst Salt" produce="FlwrMix">flours, yeast and salt</ingr> in a <impl abr="MixBwl">mixing bowl</impl>.</instr> <instr>Combine the <ingr abr="FrmCid Wtr" produce="WtrCid">cider and water</ingr> in a <impl abr="LqdMeasCup">liquid measurementing cup</impl>.</instr>
+        </line>
+        
+        <line n="8"><instr>Add the <ingr abr="WtrCid FlwrMix" produce="Dgh">liquid to the flour mixture</ingr>; use a <impl abr="Sptla" subs="5">spatula</impl> or <impl abr="BnchScpr" subs="5">bench scraper</impl> or <impl abr="Hand" subs="5">your hand moistened with water</impl> to blend them for about a minute.</instr> The <ingr abr="Dgh">dough</ingr> should be shaggy yet cohesive. <instr>Cover the bowl with a <impl abr="Twl">towel</impl>; let the dough <time>rest for <meas numval="20" unit="min">20 minutes</meas></time>.</instr></line>
+        
+        <line n="9"><instr>Moisten your kneading <impl abr="Hnd">hand</impl>. If the <ingr abr="Dgh">dough</ingr> seems stiff, add the optional <ingr abr="Wtr"><meas numval="1" unit="tblspoon">tablespoon of water</meas></ingr>.</instr> <instr>Stretch one edge of the <ingr abr="Dgh">dough</ingr> (still in the bowl), then press it into the center of the <impl abr="MixBwl">bowl</impl>. Repeat this about a dozen times, moving clockwise to catch all sides of the <ingr abr="Dgh">dough</ingr>. (This should take 1 or 2 minutes.)</instr></line>
+        
+        <line n="10"><instr>Turn the <ingr abr="Dgh">dough</ingr> over so the seams are on the bottom. Cover and let rest for <time><meas numval="20" unit="min">20 minutes</meas></time>.</instr> <instr>Repeat the clockwise stretching and folding two more times, with <time><meas numval="20" unit="min">20-minute</meas></time> rests after each.</instr> <instr>Cover and refrigerate at least <time><meas numval="8" unit="hour">8 hours</meas> and up to <meas numval="24" unit="hour">24 hours</meas></time>. The <ingr abr="Dgh">dough</ingr> should have doubled. If it hasn't, leave it on the counter until it does.</instr></line>
+        
+        <line n="11"><instr>Lightly <ingr abr="Flwr">flour</ingr> a work surface. Use a <impl abr="PstryClth" subs="2">pastry cloth</impl> or <impl abr="DTwl" subs="2">clean dish towel</impl> to line a round <impl abr="Clndr">colander</impl>. Dust the <impl abr="PstryClth DTwl">cloth</impl> with <ingr abr="Flwr">flour</ingr>.</instr></line>
+        
+        <line n="12"><instr>Transfer the <ingr abr="Dgh">dough</ingr> to the floured work surface. Fold the edges toward the center to create a round shape, turning it over so the seams are on the bottom.</instr> <instr>Let it rest for 5 minutes, then transfer to the <impl abr="Clndr">colander</impl>, seam side up.</instr> <instr>Cover with a <impl abr="Twl">towel</impl> and let the <ingr abr="Dgh">dough</ingr> rise for <time><meas numval="1.5" unit="hour">1 1/2 hours</meas></time>.</instr></line>
+        
+        <line n="13"><instr><time><meas numval="30" unit="min">Thirty minutes</meas></time> before baking, place a <impl abr="CCIron" subs="3">cast-iron Dutch oven (lid on)</impl> or <impl abr="ECIron" subs="3">enameled cast-iron pot with a lid (on)</impl> in the oven; preheat to <meas numval="475" unit="degree">475 degrees</meas>.</instr></line>
+        
+        <line n="14"><instr>Carefully remove the <impl abr="CCIron ECIron">hot pot</impl> from the oven.</instr></line>
+        
+        <line n="15"><instr>Turn the <ingr abr="Dgh">dough</ingr> out onto the counter so the seams are on the bottom.</instr> <instr>Use <impl abr="KtchnScr">kitchen scissors</impl> to make <meas numval="8" unit="snip">8 snips</meas> on the top of the <ingr abr="Dgh">dough</ingr> in an evenly spaced spoke pattern, each about <meas numval=".25" unit="inch">1/4-inch deep</meas>.</instr> <instr>Lift the <ingr abr="Dgh">dough</ingr> and carefully drop it into the <impl abr="CCIron ECIron">hot pot</impl>. Immediately cover with the hot lid.</instr> <instr>Bake for <time><meas numval="30" unit="min">30 minutes</meas></time>, then reduce the heat to <meas numval="450" unit="degree">450 degrees</meas>.</instr> <instr>Uncover and bake for <time><meas numval="8" unit="min">8</meas> to <meas numval="10" unit="min">10 minutes</meas></time> or until the crust is dark brown. Try to minimize the amount of time the oven door is open.</instr></line>
+        
+        <line n="16">The bread is done when its internal temperature registers <meas numval="205" unit="degree">205 degrees</meas> on an instant-read thermometer and the loaf sounds hollow when knocked on the underside.</line>
+        
+        <line n="17"><instr>Transfer the loaf to a wire rack to cool for at least <time><meas numval="1" unit="hour">1 hour</meas></time> before cutting.</instr></line>
+        
+    </section>
+</doc>
+<!-- This code neglects to add value where there are instructions. -->
