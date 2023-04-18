@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" width="600px" height="600px">
+    <g alignment-baseline="baseline"></g>
+    <line x1="50" y1="430" x2="430" y2="430" style="stroke:rgb(10,10,10); stroke-width:1;"></line>
+    <line x1="50" y1="330" x2="430" y2="330" style="stroke:rgb(10,10,10); stroke-width:1;"></line>
+    <line x1="50" y1="230" x2="430" y2="230" style="stroke:rgb(10,10,10); stroke-width:1;"></line>
+    <line x1="50" y1="130" x2="430" y2="130" style="stroke:rgb(10,10,10); stroke-width:1;"></line>
+    <line x1="50" y1="30" x2="430" y2="30" style="stroke:rgb(10,10,10); stroke-width:1;"></line>
+    <line x1="125" y1="530" x2="125" y2="465" style="stroke:rgb(255,0,0); stroke-width:27;"/>
+    <line x1="225" y1="530" x2="225" y2="430" style="stroke:rgb(0, 255,0); stroke-width:27;"/>
+    <line x1="325" y1="530" x2="325" y2="126" style="stroke:rgb(0,0,255); stroke-width:27;"/>
+    <text x="15" y="30" fill="black" transform="rotate(-90 185, 200)">Area in Square Miles</text>
+    <text x="175" y="590" fill="black">Polynesian Islands</text>
+    <text x="20" y="435" fill="black">100</text>
+    <text x="20" y="335" fill="black">200</text>
+    <text x="20" y="235" fill="black">300</text>
+    <text x="20" y="135" fill="black">400</text>
+    <text x="20" y="35" fill="black">500</text>
+    <text x="90" y="550" fill="black">Tongatapu</text>
+    <text x="200" y="550" fill="black">Raiatea</text>
+    <text x="305" y="550" fill="black">Tahiti</text>
+    <line x1="50" y1="30" x2="50" y2="530" style="stroke: rgb(0,0,0); stroke-width:6;"/>
+    <line x1="50" y1="530" x2="430" y2="530" style="stroke:rgb(0,0,0); stroke-width:6;"/>
+    
+
+</svg>
