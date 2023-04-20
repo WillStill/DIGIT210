@@ -15,35 +15,36 @@ The function *assembleAllNames* is the first function defined, called, and conta
 
 It starts finding all files in the collection directory ending with '.xml'. A variable `filepath` is created using the collection's directory name and the file's name. `Filepath` is then sent to the function *readTextFiles*.
 
-**Call function *readTextFiles*, Returned `dictEntities`**
+- **Call function *readTextFiles*, Returned `dictEntities`**
 
 For each file, a `dictEntities` is returned. Each dictionary is added to `AllNames`, another dictionary. The `AllNames` dictionary keys are then made into a list and sorted alphabetically, making `SortedDict`. The function *writeSortedEntries* is called with the argument `SortedDict`.
 
-**Call function *writeSortedEntries***
+- **Call function *writeSortedEntries***
 
 Another for loop is made finding all files in the collection directory ending with '.xml'. A variable `sourcePath` is made the same as `filepath`. The function *xmlTagger* is called upon with the arguements `sourcePath` and `SortedDict`.
 
-**Call function *xmlTagger***
+- **Call function *xmlTagger***
 
 ## Function: readTextFiles
 The Function starts by using the Saxonche processor to read the XML through xpath expressions. Line 115 `xpath = xp.evaluate('//dialogue ! normalize-space() => string-join()')` was copied from `GraydonAutotagging.py`. This line selects text in the dialogue elements. Then, all spaces are normalized and each instance is joined into one long saxonche.PyXdmValue node. This node type cannot be used by python, so it is converted back into a string.
 
 This string is then cleaned up using regex expressions in python:
-''' python
+
+```python
 cleanedUp = regex.sub(r"/|\^", r" ", string)
 cleanedUp = regex.sub(r"(\w[!,\?,\.,\*])(\S)", r"\1 \2", cleanedUp)
 cleanedUp = regex.sub(r"'([A-Z])]", r" \1", cleanedUp)
 cleanedUp = regex.sub(r"(\.) (\.\.)", r"\1\2", cleanedUp)
 cleanedUp = regex.sub(r"(\.) ('s)", r"\1\2", cleanedUp)
-'''
+```
 
 This removes any metadata characters that might have been left behind, and properly adds spaces where they might have been missed. At this point, the variable `cleanup` has all text formatted and cleaned in one continuous string. Then, the string is converted into `tokens`. `Tokens` is a class usable by the spaCy processor., where it is sent off to the function *entityCollector*. 
 
-**Call function *entityCollector*, Returned `entities`**
+- **Call function *entityCollector*, Returned `entities`**
 
 After *entityCollector* returns a dict of entities for one file, `dictEntities` takes this dict and is returned to *assembleAllNames*.
 
-**Return `dictEntities`**
+- **Return `dictEntities`**
 
 ## Function: entityCollector
 Inside of *Function readTextFiles*, the funciton *entityCollector* is called upon before the function ends. Here, specific entities are found by spaCy and made into a dict class of strings. 
@@ -51,13 +52,15 @@ Inside of *Function readTextFiles*, the funciton *entityCollector* is called upo
 `Entities` is first defined as an empty dict. To be placed in the dict, a few things have to happen. Each instance of an entity in `tokens` has to 
 
 1. have an entity label equal to one of the few specified (i.e., LOC 'location', ORG 'organization', PERSON, etc.)
-1. and the text corresponding to that entity cannot be matching the regex expression '''regex
+1. and the text corresponding to that entity cannot be matching the regex expression:
+
+```regex
 \w*[.,!?;:']\w*
-'''
+```
 
 If an entity identified by spaCy passes these two checks, the text corresponding to that entity and its label are added to the dict `entities`. The `entities` dict is then returned back to *readTextFiles*.
 
-**Return entities**
+- **Return entities**
 
 ## Function: writeSortedEntries
 This is the shortest function at 5 lines. It writes to a file `StillerAutotag.txt` the key and value of each entity in the collection. If `StillerAutotag.txt` is not an existing file, one is created. 
@@ -69,7 +72,7 @@ From *assembleAllNames*' for loop, the current filename and target path are take
 
 Next, the file from the XML collection is read and converted to a string: `stringFile`. For each of the keys and value in the `SortedDict`, a variable `replacement` places the key and value into a xml structured `name` element with `type` attribute. These changes are applied to `stringFile`. Unwanted changes are then reverted using regex.
 
-```python
+```regex
 cleanedStringFile = regex.sub(r"(<\w+? \w+?=.)<name type=\"\w+?\">(\w+?)</name>(\")", r"\1\2\3", stringFile)
 ```
 The code above was copied from `GraydonAutotagging.py`.
