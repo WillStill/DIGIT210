@@ -3,20 +3,20 @@ import spacy
 import re as regex
 # ebb: I'm adding one more import line that we'll use for regex substitutions later
 
-# nlp = spacy.cli.download("en_core_web_md")
-nlp = spacy.load('en_core_web_md')
+# nlp = spacy.cli.download("en_core_web_lg")
+nlp = spacy.load('en_core_web_lg')
 # ebb: In the line above I'm loading one of the spaCy language models: use either _md or _lg.
 # If you change versions, you need to uncomment the line above and import it, and it can take
 # a little while to finish importing.
 
 workingDir = os.getcwd()
-print("source-txt" + workingDir)
+print("WORKING DIR: ", workingDir + "..\source-xml")
 
-insideDir = os.listdir(workingDir)
-print(str(insideDir))
+#insideDir = os.listdir(workingDir)
+#print(str(insideDir))
 
-CollPath = os.path.join(workingDir, '../source-xml')
-print(CollPath)
+CollPath = os.path.join(workingDir, '..\source-xml')
+print("COLLPATH: ", CollPath)
 # 1. ebb: CollPath can also simply be defined more simply as a relative path
 # defined from this Python file's location, like this, because you climb up one directory
 # and then down into your source XML files:

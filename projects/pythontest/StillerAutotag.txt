@@ -1,0 +1,39 @@
+Abby : PERSON
+Abigail : PERSON
+Alex : PERSON
+Bummer : PERSON
+Caroline : PERSON
+Clint : PERSON
+Community Center : LOC
+David : PERSON
+Demetrius : PERSON
+Dinner : PERSON
+Elliott : PERSON
+Emily : PERSON
+Evelyn : PERSON
+George : PERSON
+Granny : PERSON
+Gus : PERSON
+Haley : PERSON
+Harvey : PERSON
+Linus : PERSON
+Maru : PERSON
+Pam : PERSON
+Pelican : NORP
+Pelican Town : LOC
+Pierre : PERSON
+Robin : PERSON
+Saloon : LOC
+Stardew Valley : LOC
+Time : ORG
+Waddya : PERSON
+Willy : PERSON
+Wizard : PERSON
+Zuzu : PERSON
+Zuzu City : GPE
+carrot brulee : PERSON
+hun : PERSON
+mycorhizal : PERSON
+the Joja Co.'s : ORG
+the Shadow People : ORG
+the Stardrop : ORG

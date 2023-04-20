@@ -37,78 +37,72 @@ ruler = nlp.add_pipe("span_ruler", before="ner", config=config)
 # Notes: Mattingly has this: ruler = nlp.add_pipe("entity_ruler", after="ner", config={"validate": True})
 # But this only works when spaCy doesn't recognize a word / phrase as a named entity of any kind.
 # If it recognizes a named entity but tags it wrong, we correct it with the span_ruler, not the entity_ruler
+
 patterns = [
-    {"label": "ORG", "pattern": "Balrog"},
-    {"label": "GPE", "pattern": "Bree"},
-    {"label": "LOC", "pattern": "Middle-earth"},
-    {"label": "GPE", "pattern": "Minas Tirith"},
-    {"label": "LOC", "pattern": "the Misty Mountains"},
-    {"label": "LOC", "pattern": "Rauros"},
-    {"label": "GPE", "pattern": "Rohan"},
-    {"label": "GPE", "pattern": "Gondor"},
-    {"label": "PERSON", "pattern": "Bilbo"},
-    {"label": "PERSON", "pattern": "Frodo"},
-    {"label": "PERSON", "pattern": "Gandalf"},
-    {"label": "PERSON", "pattern": "Gamgee"},
-    {"label": "PERSON", "pattern": "Adelard"},
-    {"label": "PERSON", "pattern": "ADELARD TOOK"},
-    {"label": "PERSON", "pattern": "ANGELICA"},
-    {"label": "PERSON", "pattern": "Aragorn"},
-    {"label": "PERSON", "pattern": "Arathorn"},
-    {"label": "PERSON", "pattern": "Balin"},
-    {"label": "PERSON", "pattern": [{"TEXT" : {"REGEX": "Meriadoc( Brandybuck)?"}}]},
-    {"label": "PERSON", "pattern": [{"TEXT" : {"REGEX": "Peregrin( Took)?"}}]},
-    {"label": "PERSON", "pattern": "Rose"},
-    {"label": "PERSON", "pattern": "Sandyman"},
-    {"label": "PERSON", "pattern": "Saruman"},
-    {"label": "PERSON", "pattern": "Sauron"},
-    {"label": "NULL", "pattern": "Gr�"},
-    {"label": "NULL", "pattern": "Worm"},
-    {"label": "PERSON", "pattern": "Gr�ma Wormtongue"},
-    {"label": "NULL", "pattern": "Apple"},
-    {"label": "NULL", "pattern": "AWAKE"},
-    {"label": "NULL", "pattern": "Saddle"},
-    {"label": "NULL", "pattern": "MeetingsFrodo"},
-    {"label": "NULL", "pattern": "the Rings A Long"},
-    {"label": "NULL", "pattern": "Apple"},
-    {"label": "NULL", "pattern": "Party"},
-    {"label": "NULL", "pattern": "ON PARTY"},
-    {"label": "NULL", "pattern": "PARTY"},
-    {"label": "NULL", "pattern": "Birthday Party"},
-    {"label": "NULL", "pattern": "RohanDusk"},
-    {"label": "NULL", "pattern": [{"TEXT" : {"REGEX": "Rohan\w+"}}]},
-    {"label": "ORG", "pattern": "Rohirrim"},
-    {"label": "NULL", "pattern": [{"TEXT" : {"REGEX": "Rohirrim\w+"}}]},
-    {"label": "NULL", "pattern": [{"TEXT" : {"REGEX": "([Tt]he )? S[Hh][Ii][Rr][Ee]"}}]},
-    {"label": "LOC", "pattern": "Elvenhome"},
-    {"label": "LOC", "pattern": "Bagshot Row"},
-    {"label": "LOC", "pattern": "Bag End"},
-    {"label": "PRODUCT", "pattern": "Ring"},
-    {"label": "PERSON", "pattern": "Ringlord"},
-    {"label": "NULL", "pattern": [{"TEXT" : {"REGEX": "^[a-z][a-z ]*[a-z]$"}}]},
-    # ^^ Trying to remove the all lower-case entities^^^
-    {"label": "NULL", "pattern": [{"TEXT" : {"REGEX": ".*`.*"}}]},
-    {"label": "NULL", "pattern": [{"TEXT" : {"REGEX": "[a-z]+[A-Z]\w+"}}]},
-    {"label": "NULL", "pattern": "�ri"},
-    {"label": "TIME", "pattern": "Time"},
-    {"label": "NULL", "pattern": "Throne"},
-    {"label": "CARDINAL", "pattern": "Thrice"},
-    {"label": "NULL", "pattern": "Fire"},
-    {"label": "NULL", "pattern": "Fissh"},
-    {"label": "LOC", "pattern": "Firienfeld"},
-    {"label": "LOC", "pattern": "Firienwood"},
-    {"label": "NULL", "pattern": "G3"},
-    {"label": "NULL", "pattern": "Und�"},
-    {"label": "NULL", "pattern": "Water Hot"},
-    {"label": "NULL", "pattern": "Yale"},
-    {"label": "COLOR", "pattern": "Yellow"},
-    {"label": "NULL", "pattern": "a Great"},
+    {"label": "PERSON", "pattern": "Abigail"},
+    {"label": "PERSON", "pattern": "Alex"},
+    {"label": "PERSON", "pattern": "Caroline"},
+    {"label": "PERSON", "pattern": "Clint"},
+    {"label": "PERSON", "pattern": "Demetrius"},
+    {"label": "PERSON", "pattern": "Dwarf"},
+    {"label": "PERSON", "pattern": "Elliott"},
+    {"label": "PERSON", "pattern": "Emily"},
+    {"label": "PERSON", "pattern": "Evelyn"},
+    {"label": "PERSON", "pattern": "George"},
+    {"label": "PERSON", "pattern": "Gus"},
+    {"label": "PERSON", "pattern": "Haley"},
+    {"label": "PERSON", "pattern": "Harvey"},
+    {"label": "PERSON", "pattern": "Jas"},
+    {"label": "PERSON", "pattern": "Jodi"},
+    {"label": "PERSON", "pattern": "Kent"},
+    {"label": "PERSON", "pattern": "Krobus"},
+    {"label": "PERSON", "pattern": "Leah"},
+    {"label": "PERSON", "pattern": "Leo"},
+    {"label": "PERSON", "pattern": "Lewis"},
+    {"label": "PERSON", "pattern": "Linus"},
+    {"label": "PERSON", "pattern": "Marnie"},
+    {"label": "PERSON", "pattern": "Maru"},
+    {"label": "PERSON", "pattern": "Pam"},
+    {"label": "PERSON", "pattern": "Penny"},
+    {"label": "PERSON", "pattern": "Pierre"},
+    {"label": "PERSON", "pattern": "Robin"},
+    {"label": "PERSON", "pattern": "Sam"},
+    {"label": "PERSON", "pattern": "Sandy"},
+    {"label": "PERSON", "pattern": "Sebastian"},
+    {"label": "PERSON", "pattern": "Shane"},
+    {"label": "PERSON", "pattern": "Vincent"},
+    {"label": "PERSON", "pattern": "Willy"},
+    {"label": "PERSON", "pattern": "Wizard"},
+
+    #{"label": "LOC", "pattern": "Stardew Valley"},
+    {"label": "LOC", "pattern": "Community Center"},
+    {"label": "LOC", "pattern": "Bus Stop"},
+    {"label": "LOC", "pattern": "Saloon"},
+    {"label": "LOC", "pattern": "JojaMart"},
+    {"label": "LOC", "pattern": "House"},
+    {"label": "LOC", "pattern": "Farm"},
+    {"label": "LOC", "pattern": "Clinic"},
+    {"label": "LOC", "pattern": "Beach"},
+    {"label": "LOC", "pattern": "Tower"},
+    {"label": "LOC", "pattern": "Tent"},
+    {"label": "LOC", "pattern": "Library"},
+    {"label": "LOC", "pattern": "Mines"},
+    {"label": "LOC", "pattern": "Railroad"},
+    {"label": "LOC", "pattern": "Ginger Island"},
+    {"label": "LOC", "pattern": "Oasis"},
+    {"label": "LOC", "pattern": "Woods"},
+    {"label": "LOC", "pattern": "Museum"},
+    {"label": "LOC", "pattern": "Sewers"},
+    {"label": "LOC", "pattern": "Forest"},
+    {"label": "LOC", "pattern": "Store"},
+    {"label": "LOC", "pattern": "Shop"},
 ]
 ruler.add_patterns(patterns)
 
 # 3. Here, the function imports each individual file, one at a time
 # (received from the for-loop below.
 def readTextFiles(filepath):
+    print("FUNCTION READTEXTFILES")
     # with open(filepath, 'r', encoding='utf8') as f:
     with PySaxonProcessor(license=False) as proc:
         xml = open(filepath, encoding='utf-8').read()
@@ -118,7 +112,7 @@ def readTextFiles(filepath):
         node = proc.parse_xml(xml_text=xml)
         xp.set_context(xdm_item=node)
 
-        xpath = xp.evaluate('//book//p ! normalize-space() => string-join()')
+        xpath = xp.evaluate('//dialogue ! normalize-space() => string-join()')
         # ebb: Let's get the string() value of all the <p> elements that are descendants of <book>.
         # The XPath function normalize-space() gets the string value and removes extra spaces.
         # That way we avoid the prologue, preface material.
@@ -126,15 +120,20 @@ def readTextFiles(filepath):
         # instead of a new string for every <p> element.
         # string = xpath.__str__()
         string = str(xpath)
+
         # ebb: Doing some regex replacements to clean up punctuation issues that are getting in the way of the NER tagger
-        cleanedUp = regex.sub("_", " ", string)
+
+        cleanedUp = regex.sub(r"/|\^", r" ", string)
+        cleanedUp = regex.sub(r"(\w[!,\?,\.,\*])(\S)", r"\1 \2", cleanedUp)
         cleanedUp = regex.sub(r"'([A-Z])]", r" \1", cleanedUp)
-        cleanedUp = regex.sub(r"([.!?;'`])([A-Z'`]])", r"\1 \2", cleanedUp)
+        cleanedUp = regex.sub(r"(\.) (\.\.)", r"\1\2", cleanedUp)
+        cleanedUp = regex.sub(r"(\.) ('s)", r"\1\2", cleanedUp)
         # send to spaCy to collect nlp data on the big string
         tokens = nlp(cleanedUp)
+        #print("TOKENS", type(tokens))
         # tokens = nlp.pipe(cleanedUp, disable=["tagger", "parser", "attribute_ruler", "lemmatizer"])
 
-        dictEntities = entitycollector(tokens)
+        dictEntities = entityCollector(tokens)
         # ebb: The line above sends our nlp tokens to the named entity collector function.
         # THIS current function will receive and print a simple form of their output in the next line.
         print(f"{dictEntities=}")
@@ -150,10 +149,11 @@ def readTextFiles(filepath):
 
 # 4. ebb: The function below returns a simple list of named entities.
 # But on the way, we're printing out as much we can from spaCy's classification of named entities:
-def entitycollector(tokens):
+def entityCollector(tokens):
+    print("FUNCTION ENTITYCOLLECTOR")
     entities = {}
     for ent in sorted(tokens.ents):
-        if ent.label_ == "LOC" or ent.label_=="FAC" or ent.label_=="ORG" or ent.label_=="GPE" or ent.label_=="NORP":
+        if ent.label_ == "LOC" or ent.label_=="FAC" or ent.label_=="ORG" or ent.label_=="GPE" or ent.label_=="NORP" or ent.label_=="PERSON":
             if not regex.match(r"\w*[.,!?;:']\w*", ent.text):
         # ebb: The line helps experiment with different spaCy named entity classifiers, in combination if you like:
         # When using it, remember to indent the next lines for the for loop.
@@ -161,6 +161,9 @@ def entitycollector(tokens):
             # stringify is a string-formatted version of this designed to provide an easily readable file output.
             # print(f"{stringify=}")
                 entities[ent.text] = ent.label_
+                #print("ENTITIES", type(entities[ent.text]))
+                #print("ENTITY LABELS", type(ent.label_))
+                #print("ENTITIES", type(entities))
     print(f"{entities=}")
     return entities
     # ebb: Keep the return line in position at same indentation level as the definition of the entities variable.
@@ -169,6 +172,7 @@ def entitycollector(tokens):
 # 2. and 5. ebb: The for loop below is working with your CollPath, and going through each file inside,
 # and sending it up to readTextFiles, where the nlp processing will happen.
 def assembleAllNames(CollPath):
+    print("FUNCTION ASSEMBLEALLNAMES")
     AllNames = {}
     for file in os.listdir(CollPath):
         if file.endswith(".xml"):
@@ -180,6 +184,7 @@ def assembleAllNames(CollPath):
             # ebb: The line above adds each file's new NLP data to the dictionary.
 
     print(f"{AllNames=}")
+    print("ALLNAMES", type(AllNames))
     AllNamesKeys = list(AllNames.keys())
     AllNamesKeys.sort()
     SortedDict =  {i: AllNames[i] for i in AllNamesKeys}
@@ -196,17 +201,18 @@ def assembleAllNames(CollPath):
             sourcePath = f"{CollPath}/{file}"
             eachFileData = xmlTagger(sourcePath, SortedDict)
             # ebb: In the lines above, we send to the xmlTagger to add the nlp info as XML elements and attributes to the source files.
-    return eachFileData
-    # Python functions don't really need to have return lines, but we can set the return to the function's most important output.
 
 def writeSortedEntries(dictionary):
-    with open('distTrained-ORG-LOC-GPE-NORP.txt', 'w') as f:
+    print("FUNCTION WRITESORTEDENTRIES")
+    with open('StillerAutotag.txt', 'w') as f:
         for key, value in dictionary.items():
             f.write(key + ' : ' + value + '\n')
 def xmlTagger(sourcePath, SortedDict):
+    print("FUNCTION XMLTAGGER")
     with open(sourcePath, 'r', encoding='utf8') as f:
         readFile = f.read()
         stringFile = str(readFile)
+        print("STRINGFILE", stringFile)
 
         # ebb: Get the current filename. We need to know it to write its new output version
         filename = os.path.basename(f.name)
@@ -219,11 +225,12 @@ def xmlTagger(sourcePath, SortedDict):
             replacement = '<name type="' + val + '">' + key + '</name>'
             # print(f"{replacement=}")
             stringFile = stringFile.replace(key, replacement)
+            cleanedStringFile = regex.sub(r"(<\w+? \w+?=.)<name type=\"\w+?\">(\w+?)</name>(\")", r"\1\2\3", stringFile)
             # print(f"{stringFile=}")
 
         # ebb: Output goes in the taggedOutput directory: ../taggedOutput
         with open(targetFile, 'w') as f:
-            f.write(stringFile)
+            f.write(cleanedStringFile)
 
 assembleAllNames(CollPath)
 
